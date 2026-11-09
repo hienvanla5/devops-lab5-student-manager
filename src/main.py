@@ -71,6 +71,11 @@ def add_student(
     Returns:
         Danh sách sinh viên đã được cập nhật
     """
+
+    if not (16 <= age <= 60):
+        print(f"Tuổi {age} không hợp lệ  (phải từ 16 đến 60)!")
+        return students
+
     # Kiểm tra trùng mã sinh viên
     for s in students:
         if s.student_id == student_id:

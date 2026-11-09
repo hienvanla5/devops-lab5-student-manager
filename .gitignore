@@ -1,5 +1,27 @@
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Environment variables
 .env
+.env.*
+!.env.example
+
+# Private configuration
+config/database.json
+config/secrets.json
+
+# IDE
 .vscode/
+.idea/
+
+# Logs
 *.log
+
+# Virtual environment
+venv/
+.venv/
+
+# Operating system
+.DS_Store
+Thumbs.db
