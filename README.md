@@ -22,4 +22,4 @@ python src/main.py
 - Git & GitHub (Git Flow)
 
 ## Tác giả
-- Nhóm A & Nhóm B — DevOps Course, Bài 5
+- Nhóm A & Nhóm B — DevOps Course, Bài 5Protected Branch Test
