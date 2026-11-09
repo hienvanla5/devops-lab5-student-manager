@@ -1,0 +1,27 @@
+#!/bin/sh
+
+echo "================================"
+echo "  PRE-COMMIT: Python Syntax Check"
+echo "================================"
+
+if command -v python >/dev/null 2>&1; then
+    PYTHON=python
+elif command -v py >/dev/null 2>&1; then
+    PYTHON=py
+else
+    echo "ERROR: Python interpreter not found!"
+    echo "Commit has been cancelled."
+    exit 1
+fi
+
+# Kiểm tra cú pháp Python trong thư mục src
+$PYTHON -m compileall -q src
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Python syntax check failed!"
+    echo "Commit has been cancelled."
+    exit 1
+fi
+
+echo "SUCCESS: Python syntax check passed!"
+exit 0
