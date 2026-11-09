@@ -25,6 +25,10 @@ class Student:
             "grade": self.grade,
         }
 
+    def is_valid_age(self) -> bool:
+        """Kiểm tra tuổi sinh viên hợp lệ."""
+        return 16 <= self.age <= 60
+
 
 # --- Test nhanh ---
 if __name__ == "__main__":
