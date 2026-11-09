@@ -8,6 +8,7 @@
 - Quản lý thông tin sinh viên (Student Model)
 - Thêm sinh viên mới (add_student)
 - Tìm kiếm sinh viên theo tên hoặc mã (search_student)
+- Kiểm tra tuổi hợp lệ (16-60)
 
 ## Cài đặt & Chạy
 
